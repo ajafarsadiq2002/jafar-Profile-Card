@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+        }
+
+        .profile-card {
+            position: relative;
+            width: 350px;
+            margin: 100px auto;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 100;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: -50px; /* Adjusts the image to float above the card */
+        }
+
+        .social-links a {
+            color: white;
+            margin: 10px;
+            font-size: 24px;
+        }
+
+        /* Ensure your links are visible */
+        .social-links a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay loop muted playsinline id="background-video">
+    <source src="1118545_4k_Form_Graphic_1280x720.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Profile Card -->
+<div class="profile-card">
+    <img src="JAFAR SADIQ PASSPORT SIZE PHOTO.jpg" alt="Profile Photo" class="profile-photo">
+    <h1>Jafar Sadiq A</h1>
+    <p>Full Stack AI Developer</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/jafar-sadiq-a-b7168420" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="http://www.skillrack.com/profile/305314/6944aed313f8ad954f39ae7cdfdc8862fd540b2a" target="_blank"><i class="fas fa-code"></i></a>
+        <a href="https://github.com/ajafarsadiq2002" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</div>
+
+</body>
+</html>
